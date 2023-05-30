@@ -1,0 +1,7 @@
+<map id="program.cc" name="program.cc">
+<area shape="rect" id="node1" title="Programa principal de la práctica Simulador de un cluster de procesadores multiproceso." alt="" coords="62,5,157,32"/>
+<area shape="rect" id="node2" href="$Proceso_8hh.html" title="Especificación de la clase Proceso." alt="" coords="39,229,132,256"/>
+<area shape="rect" id="node3" href="$Cluster_8hh.html" title="Especificación de la clase Cluster." alt="" coords="26,80,113,107"/>
+<area shape="rect" id="node4" href="$Procesador_8hh.html" title="Especificación de la clase Procesador." alt="" coords="77,155,190,181"/>
+<area shape="rect" id="node5" href="$Area__espera_8hh.html" title="Especificación de la clase area_espera." alt="" coords="215,155,338,181"/>
+</map>

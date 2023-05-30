@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simulador de clúster de procesadores multiproceso: Referencia de la Estructura Area_espera::Prioridad_cont</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simulador de clúster de procesadores multiproceso
+   &#160;<span id="projectnumber">Versión primavera 2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="classArea__espera.html">Area_espera</a></li><li class="navelem"><a class="el" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="structArea__espera_1_1Prioridad__cont-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Estructura Area_espera::Prioridad_cont</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Estructura de datos que se encuentra en cada prioridad y que contiene la cola de procesos, el número de aceptados y el número de rechazados de la prioridad hasta el momento.  
+ <a href="structArea__espera_1_1Prioridad__cont.html#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:a5b5c2492dad74a5d3b8e3d3368d267c0"><td class="memItemLeft" align="right" valign="top">queue&lt; <a class="el" href="classProceso.html">Proceso</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structArea__espera_1_1Prioridad__cont.html#a5b5c2492dad74a5d3b8e3d3368d267c0">cola_procesos</a></td></tr>
+<tr class="memdesc:a5b5c2492dad74a5d3b8e3d3368d267c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cola de procesos ordenados por orden de inserción.  <a href="structArea__espera_1_1Prioridad__cont.html#a5b5c2492dad74a5d3b8e3d3368d267c0">Más...</a><br /></td></tr>
+<tr class="separator:a5b5c2492dad74a5d3b8e3d3368d267c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480cc7ee9a3bd6bacf15381540251b92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structArea__espera_1_1Prioridad__cont.html#a480cc7ee9a3bd6bacf15381540251b92">num_rechazados</a></td></tr>
+<tr class="memdesc:a480cc7ee9a3bd6bacf15381540251b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de procesos rechazados al enviarlos al clúster de la prioridad.  <a href="structArea__espera_1_1Prioridad__cont.html#a480cc7ee9a3bd6bacf15381540251b92">Más...</a><br /></td></tr>
+<tr class="separator:a480cc7ee9a3bd6bacf15381540251b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c38f0f932019a4ab1698357e8fd729"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structArea__espera_1_1Prioridad__cont.html#aa3c38f0f932019a4ab1698357e8fd729">num_aceptados</a></td></tr>
+<tr class="memdesc:aa3c38f0f932019a4ab1698357e8fd729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de procesos enviados satisfactoriamente al clúster de la prioridad.  <a href="structArea__espera_1_1Prioridad__cont.html#aa3c38f0f932019a4ab1698357e8fd729">Más...</a><br /></td></tr>
+<tr class="separator:aa3c38f0f932019a4ab1698357e8fd729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Estructura de datos que se encuentra en cada prioridad y que contiene la cola de procesos, el número de aceptados y el número de rechazados de la prioridad hasta el momento. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8hh_source.html#l00023">23</a> del archivo <a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>.</p>
+</div><h2 class="groupheader">Documentación de los datos miembro</h2>
+<a id="a5b5c2492dad74a5d3b8e3d3368d267c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5c2492dad74a5d3b8e3d3368d267c0">&#9670;&nbsp;</a></span>cola_procesos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">queue&lt;<a class="el" href="classProceso.html">Proceso</a>&gt; Area_espera::Prioridad_cont::cola_procesos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cola de procesos ordenados por orden de inserción. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8hh_source.html#l00025">25</a> del archivo <a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>.</p>
+
+</div>
+</div>
+<a id="aa3c38f0f932019a4ab1698357e8fd729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c38f0f932019a4ab1698357e8fd729">&#9670;&nbsp;</a></span>num_aceptados</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Area_espera::Prioridad_cont::num_aceptados</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Número de procesos enviados satisfactoriamente al clúster de la prioridad. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8hh_source.html#l00029">29</a> del archivo <a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>.</p>
+
+</div>
+</div>
+<a id="a480cc7ee9a3bd6bacf15381540251b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480cc7ee9a3bd6bacf15381540251b92">&#9670;&nbsp;</a></span>num_rechazados</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Area_espera::Prioridad_cont::num_rechazados</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Número de procesos rechazados al enviarlos al clúster de la prioridad. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8hh_source.html#l00027">27</a> del archivo <a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta estructura fue generada a partir del siguiente fichero:<ul>
+<li><a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simulador de clúster de procesadores multiproceso: Referencia de la Clase Area_espera</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simulador de clúster de procesadores multiproceso
+   &#160;<span id="projectnumber">Versión primavera 2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="classArea__espera-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Area_espera</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Representa un área de espera.  
+ <a href="classArea__espera.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de datos que se encuentra en cada prioridad y que contiene la cola de procesos, el número de aceptados y el número de rechazados de la prioridad hasta el momento.  <a href="structArea__espera_1_1Prioridad__cont.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a03fae0938ad34fe4e0ea6e0d0b0852b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a03fae0938ad34fe4e0ea6e0d0b0852b8">Area_espera</a> ()</td></tr>
+<tr class="memdesc:a03fae0938ad34fe4e0ea6e0d0b0852b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creadora por defecto.  <a href="classArea__espera.html#a03fae0938ad34fe4e0ea6e0d0b0852b8">Más...</a><br /></td></tr>
+<tr class="separator:a03fae0938ad34fe4e0ea6e0d0b0852b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14670db4ca5a1fcfd5ef71e4e6950f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#aa14670db4ca5a1fcfd5ef71e4e6950f0">alta_prioridad</a> (string prioridad)</td></tr>
+<tr class="memdesc:aa14670db4ca5a1fcfd5ef71e4e6950f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea una prioridad vacía en el área de espera.  <a href="classArea__espera.html#aa14670db4ca5a1fcfd5ef71e4e6950f0">Más...</a><br /></td></tr>
+<tr class="separator:aa14670db4ca5a1fcfd5ef71e4e6950f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7401296748ebe4074beb1720783ab85d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a7401296748ebe4074beb1720783ab85d">baja_prioridad</a> (string prioridad)</td></tr>
+<tr class="memdesc:a7401296748ebe4074beb1720783ab85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina una prioridad del área de espera.  <a href="classArea__espera.html#a7401296748ebe4074beb1720783ab85d">Más...</a><br /></td></tr>
+<tr class="separator:a7401296748ebe4074beb1720783ab85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320c099eb902755dd2cff657a5592a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a320c099eb902755dd2cff657a5592a5d">alta_proceso_espera</a> (<a class="el" href="classProceso.html">Proceso</a> proc, string prioridad)</td></tr>
+<tr class="memdesc:a320c099eb902755dd2cff657a5592a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un proceso a la cola de espera de una prioridad.  <a href="classArea__espera.html#a320c099eb902755dd2cff657a5592a5d">Más...</a><br /></td></tr>
+<tr class="separator:a320c099eb902755dd2cff657a5592a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe39b416f75bcd2d4eb0e1e3e17732d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#abe39b416f75bcd2d4eb0e1e3e17732d5">enviar_procesos_cluster</a> (int n, <a class="el" href="classCluster.html">Cluster</a> &amp;c)</td></tr>
+<tr class="memdesc:abe39b416f75bcd2d4eb0e1e3e17732d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía procesos de la sala de espera al clúster hasta que n procesos hayan sido colocados.  <a href="classArea__espera.html#abe39b416f75bcd2d4eb0e1e3e17732d5">Más...</a><br /></td></tr>
+<tr class="separator:abe39b416f75bcd2d4eb0e1e3e17732d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100ce44b11c72f77d145da98ebb7d664"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a100ce44b11c72f77d145da98ebb7d664">imprimir_prioridad</a> (const string &amp;prioridad) const</td></tr>
+<tr class="memdesc:a100ce44b11c72f77d145da98ebb7d664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime los procesos pendientes de la prioridad.  <a href="classArea__espera.html#a100ce44b11c72f77d145da98ebb7d664">Más...</a><br /></td></tr>
+<tr class="separator:a100ce44b11c72f77d145da98ebb7d664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030a4d4d0bcdceddcfdb15403a92c865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a030a4d4d0bcdceddcfdb15403a92c865">imprimir_area_espera</a> () const</td></tr>
+<tr class="memdesc:a030a4d4d0bcdceddcfdb15403a92c865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operación de escritura.  <a href="classArea__espera.html#a030a4d4d0bcdceddcfdb15403a92c865">Más...</a><br /></td></tr>
+<tr class="separator:a030a4d4d0bcdceddcfdb15403a92c865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a0e523c8dcffa6a791621317184bf7e7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a0e523c8dcffa6a791621317184bf7e7d">existe_proceso</a> (int id, map&lt; string, <a class="el" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a> &gt;::iterator it) const</td></tr>
+<tr class="memdesc:a0e523c8dcffa6a791621317184bf7e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consulta si existe un proceso de nombre id en la cola de procesos de la prioridad apuntada por it.  <a href="classArea__espera.html#a0e523c8dcffa6a791621317184bf7e7d">Más...</a><br /></td></tr>
+<tr class="separator:a0e523c8dcffa6a791621317184bf7e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a4a316f0af4c823f9873bd947e31dc86a"><td class="memItemLeft" align="right" valign="top">map&lt; string, <a class="el" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a></td></tr>
+<tr class="memdesc:a4a316f0af4c823f9873bd947e31dc86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura dónde para cada prioridad hay su respectiva lista de procesos.  <a href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">Más...</a><br /></td></tr>
+<tr class="separator:a4a316f0af4c823f9873bd947e31dc86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Representa un área de espera. </p>
+<p>Un área de espera tiene un mapa de prioridades y contenidos <a class="el" href="structArea__espera_1_1Prioridad__cont.html" title="Estructura de datos que se encuentra en cada prioridad y que contiene la cola de procesos,...">Prioridad_cont</a> dónde hay una cola de procesos, el número de rechazados y el número de aceptados de cada prioridad. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8hh_source.html#l00020">20</a> del archivo <a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>.</p>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a id="a03fae0938ad34fe4e0ea6e0d0b0852b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fae0938ad34fe4e0ea6e0d0b0852b8">&#9670;&nbsp;</a></span>Area_espera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Area_espera::Area_espera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creadora por defecto. </p>
+<p>Se ejecuta automáticamente al declarar un área de espera </p><dl class="section pre"><dt>Precondición</dt><dd><em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>El resultado es un área de espera vacía </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>constante </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00005">5</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                         {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    map&lt;string,  Prioridad_cont&gt;::iterator it = <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.begin();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">while</span> (it != <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        it-&gt;second.num_rechazados = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        it-&gt;second.num_aceptados = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        ++it;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="ttc" id="aclassArea__espera_html_a4a316f0af4c823f9873bd947e31dc86a"><div class="ttname"><a href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">Area_espera::espera</a></div><div class="ttdeci">map&lt; string, Prioridad_cont &gt; espera</div><div class="ttdoc">Estructura dónde para cada prioridad hay su respectiva lista de procesos.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00032">Area_espera.hh:32</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="aa14670db4ca5a1fcfd5ef71e4e6950f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14670db4ca5a1fcfd5ef71e4e6950f0">&#9670;&nbsp;</a></span>alta_prioridad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Area_espera::alta_prioridad </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prioridad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea una prioridad vacía en el área de espera. </p>
+<p>Si identificador existe, se imprime mensaje de error. </p><dl class="section pre"><dt>Precondición</dt><dd>: <em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>: prioridad añadida al área de espera. </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>log(n) siendo n el número de prioridades </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00025">25</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                 {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.find(prioridad) != <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) cout &lt;&lt; <span class="stringliteral">&quot;error: ya existe prioridad&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        Prioridad_cont aux;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        aux.num_aceptados = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        aux.num_rechazados = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.insert(make_pair(prioridad, aux));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a320c099eb902755dd2cff657a5592a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320c099eb902755dd2cff657a5592a5d">&#9670;&nbsp;</a></span>alta_proceso_espera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Area_espera::alta_proceso_espera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classProceso.html">Proceso</a>&#160;</td>
+          <td class="paramname"><em>proc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prioridad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Añade un proceso a la cola de espera de una prioridad. </p>
+<p>Si identificador no existe o tiene procesos pendientes, se imprime mensaje de error. </p><dl class="section pre"><dt>Precondición</dt><dd>: <em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>: proceso añadido a la cola de espera de la prioridad. </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>log(n) siendo n el número de prioridades, logarítmico </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00042">42</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> map&lt;string, Prioridad_cont&gt;::iterator&amp; it = <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.find(prioridad);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) cout &lt;&lt; <span class="stringliteral">&quot;error: no existe prioridad&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classArea__espera.html#a0e523c8dcffa6a791621317184bf7e7d">existe_proceso</a>(proc.<a class="code" href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">get_id</a>(), it)) cout &lt;&lt; <span class="stringliteral">&quot;error: ya existe proceso&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">else</span> it-&gt;second.cola_procesos.push(proc);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="ttc" id="aclassArea__espera_html_a0e523c8dcffa6a791621317184bf7e7d"><div class="ttname"><a href="classArea__espera.html#a0e523c8dcffa6a791621317184bf7e7d">Area_espera::existe_proceso</a></div><div class="ttdeci">bool existe_proceso(int id, map&lt; string, Prioridad_cont &gt;::iterator it) const</div><div class="ttdoc">Consulta si existe un proceso de nombre id en la cola de procesos de la prioridad apuntada por it.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8cc_source.html#l00014">Area_espera.cc:14</a></div></div>
+<div class="ttc" id="aclassProceso_html_af2d7b179495f47a5f3b71bd34d1941c5"><div class="ttname"><a href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">Proceso::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Consultora del identificador.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00017">Proceso.cc:17</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7401296748ebe4074beb1720783ab85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7401296748ebe4074beb1720783ab85d">&#9670;&nbsp;</a></span>baja_prioridad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Area_espera::baja_prioridad </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>prioridad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elimina una prioridad del área de espera. </p>
+<p>Si identificador no existe o tiene procesos pendientes, se imprime mensaje de error. </p><dl class="section pre"><dt>Precondición</dt><dd>: <em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>: prioridad eliminada del área de espera. </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>log(n) siendo n el número de prioridades, logarítmico </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00035">35</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                 {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    map&lt;string, Prioridad_cont &gt;::iterator it = <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.find(prioridad);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) cout &lt;&lt; <span class="stringliteral">&quot;error: no existe prioridad&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (not it-&gt;second.cola_procesos.empty()) cout &lt;&lt; <span class="stringliteral">&quot;error: prioridad con procesos&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">else</span> <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.erase(it);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abe39b416f75bcd2d4eb0e1e3e17732d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe39b416f75bcd2d4eb0e1e3e17732d5">&#9670;&nbsp;</a></span>enviar_procesos_cluster()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Area_espera::enviar_procesos_cluster </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCluster.html">Cluster</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envía procesos de la sala de espera al clúster hasta que n procesos hayan sido colocados. </p>
+<p>Se intentan enviar los procesos al clúster por orden de prioridad y dentro de éste por antiguedad. La función finaliza cuando se han colocado, no quedan procesos pendientes o han sido rechazados. Si se rechaza vuelve al área de espera como el más reciente. </p><dl class="section pre"><dt>Precondición</dt><dd>n &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>n procesos se han colocado en el clúster </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>n * log(n) siendo n el número de prioridades, logarítmico * constante </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00049">49</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                           {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//que pasa si hueco que le va mejor ese procesador ya tiene proceso con nombre</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    map&lt;string, Prioridad_cont&gt;::iterator it = <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.begin();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> n_colocados = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    queue&lt;Proceso&gt; aux;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">while</span> (n_colocados &lt; n and it != <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (it-&gt;second.cola_procesos.empty()) { <span class="comment">//si no quedan procesos en la prioridad y ha habido procesos rechazados se vuelven a insertar en la cola </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            it-&gt;second.cola_procesos = aux;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            ++it;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">while</span> (not aux.empty()) aux.pop();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">bool</span> colocado;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            c.<a class="code" href="classCluster.html#a122e01e92292e7fc7ed6dedf03d9f89c">proceso_enviado</a>(it-&gt;second.cola_procesos.front(), colocado);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (colocado) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                it-&gt;second.cola_procesos.pop();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                ++n_colocados;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                it-&gt;second.num_aceptados++;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classProceso.html">Proceso</a> proc = it-&gt;second.cola_procesos.front();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                it-&gt;second.cola_procesos.pop();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                aux.push(proc);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                it-&gt;second.num_rechazados++;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (not aux.empty()) { <span class="comment">//si no quedan procesos en la prioridad, no quedan prioridades y ha habido procesos rechazados se vuelven a insertar en la cola </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (it == <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) --it;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        it-&gt;second.cola_procesos = aux;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="ttc" id="aclassCluster_html_a122e01e92292e7fc7ed6dedf03d9f89c"><div class="ttname"><a href="classCluster.html#a122e01e92292e7fc7ed6dedf03d9f89c">Cluster::proceso_enviado</a></div><div class="ttdeci">bool proceso_enviado(const Proceso &amp;Proc, bool &amp;colocado)</div><div class="ttdoc">Si se ha podido encontrar un procesador adecuado en el clúster para el proceso proc,...</div><div class="ttdef"><b>Definition:</b> <a href="Cluster_8cc_source.html#l00203">Cluster.cc:203</a></div></div>
+<div class="ttc" id="aclassProceso_html"><div class="ttname"><a href="classProceso.html">Proceso</a></div><div class="ttdoc">Representa un proceso</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8hh_source.html#l00020">Proceso.hh:20</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0e523c8dcffa6a791621317184bf7e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e523c8dcffa6a791621317184bf7e7d">&#9670;&nbsp;</a></span>existe_proceso()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Area_espera::existe_proceso </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">map&lt; string, <a class="el" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a> &gt;::iterator&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consulta si existe un proceso de nombre id en la cola de procesos de la prioridad apuntada por it. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>: <em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>: Si existe se devuelve true. Sino false </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>constante </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00014">14</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                                                     {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">bool</span> existe = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    queue&lt;Proceso&gt; aux = it-&gt;second.cola_procesos;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">while</span> (not aux.empty() and not existe) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classProceso.html">Proceso</a> proc = aux.front();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (proc.<a class="code" href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">get_id</a>() == <span class="keywordtype">id</span>) existe = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        aux.pop();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> existe;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a030a4d4d0bcdceddcfdb15403a92c865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a030a4d4d0bcdceddcfdb15403a92c865">&#9670;&nbsp;</a></span>imprimir_area_espera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Area_espera::imprimir_area_espera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operación de escritura. </p>
+<p>Se imprimen los procesos pendientes de todas las prioridades por orden creciente de prioridad. Para cada prioridad se imprime el número de procesos de la prioridad colocados en el clúster y el número de rechazados. </p><dl class="section pre"><dt>Precondición</dt><dd>: <em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>: Se han impreso los procesos de todas las prioridades pendientes, el número de colocados y rechazados. </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>n * log(n) siendo n el número de prioridades, logarítmico * constante </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00100">100</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                             {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    map&lt;string, Prioridad_cont&gt;::const_iterator it = <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.begin();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">while</span> (it != <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        cout &lt;&lt; it-&gt;first &lt;&lt; endl;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classArea__espera.html#a100ce44b11c72f77d145da98ebb7d664">imprimir_prioridad</a>(it-&gt;first);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        ++it;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="ttc" id="aclassArea__espera_html_a100ce44b11c72f77d145da98ebb7d664"><div class="ttname"><a href="classArea__espera.html#a100ce44b11c72f77d145da98ebb7d664">Area_espera::imprimir_prioridad</a></div><div class="ttdeci">void imprimir_prioridad(const string &amp;prioridad) const</div><div class="ttdoc">Imprime los procesos pendientes de la prioridad.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8cc_source.html#l00084">Area_espera.cc:84</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a100ce44b11c72f77d145da98ebb7d664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100ce44b11c72f77d145da98ebb7d664">&#9670;&nbsp;</a></span>imprimir_prioridad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Area_espera::imprimir_prioridad </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>prioridad</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime los procesos pendientes de la prioridad. </p>
+<p>Se imprimen en orden decreciente de antiguedad desde su última alta. También escribe el número de procesos de la prioridad colocados en el clúster y el número de rechazos. Si no existe prioridad, se imprime mensaje de error. </p><dl class="section pre"><dt>Precondición</dt><dd>: <em>cierto</em> </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>: Se han impreso procesos de la prioridad pendientes, colocados y rechazados. </dd></dl>
+<dl class="section user"><dt>Coste</dt><dd>log(n) siendo n el número de prioridades para hacer la búsqueda, logarítmico </dd></dl>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8cc_source.html#l00084">84</a> del archivo <a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    map&lt;string, Prioridad_cont&gt;::const_iterator it = <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.find(prioridad);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>.end()) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;error: no existe prioridad&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        queue&lt;Proceso&gt; aux = it-&gt;second.cola_procesos;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">while</span> (not aux.empty()) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="classProceso.html">Proceso</a> proc = aux.front();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            cout &lt;&lt; proc.<a class="code" href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">get_id</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; proc.<a class="code" href="classProceso.html#a9232d18bcb134974f1c75af741b09035">get_mem</a>() &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; proc.<a class="code" href="classProceso.html#a6b2a6733de44fac7cec0f8c209c01640">get_time</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            aux.pop();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        cout &lt;&lt; it-&gt;second.num_aceptados &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; it-&gt;second.num_rechazados &lt;&lt; endl;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }                                                                                                                           </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="aclassProceso_html_a6b2a6733de44fac7cec0f8c209c01640"><div class="ttname"><a href="classProceso.html#a6b2a6733de44fac7cec0f8c209c01640">Proceso::get_time</a></div><div class="ttdeci">int get_time() const</div><div class="ttdoc">Consultora del tiempo.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00025">Proceso.cc:25</a></div></div>
+<div class="ttc" id="aclassProceso_html_a9232d18bcb134974f1c75af741b09035"><div class="ttname"><a href="classProceso.html#a9232d18bcb134974f1c75af741b09035">Proceso::get_mem</a></div><div class="ttdeci">int get_mem() const</div><div class="ttdoc">Consultora de la memoria.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00021">Proceso.cc:21</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentación de los datos miembro</h2>
+<a id="a4a316f0af4c823f9873bd947e31dc86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a316f0af4c823f9873bd947e31dc86a">&#9670;&nbsp;</a></span>espera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, <a class="el" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a>&gt; Area_espera::espera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Estructura dónde para cada prioridad hay su respectiva lista de procesos. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="Area__espera_8hh_source.html#l00032">32</a> del archivo <a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li><a class="el" href="Area__espera_8hh_source.html">Area_espera.hh</a></li>
+<li><a class="el" href="Area__espera_8cc_source.html">Area_espera.cc</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

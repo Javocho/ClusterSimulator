@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simulador de clúster de procesadores multiproceso: Fichero Fuente Proceso.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simulador de clúster de procesadores multiproceso
+   &#160;<span id="projectnumber">Versión primavera 2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Proceso.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Proceso_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Proceso_8hh.html">Proceso.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classProceso.html#a632f57d6ec48e76c80fbeb7734c1148c">    3</a></span>&#160;<a class="code" href="classProceso.html#a632f57d6ec48e76c80fbeb7734c1148c">Proceso::Proceso</a>() {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keywordtype">id</span> = 0;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="classProceso.html#a2f0077c9db56775d552dc3941a81ec0b">mem</a> = 0;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="classProceso.html#adf0f9027bbbb8f0c102a48376e5ef016">time</a> = 0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classProceso.html#aae36aa82451bb294e964a81d05d5371c">    9</a></span>&#160;<a class="code" href="classProceso.html#a632f57d6ec48e76c80fbeb7734c1148c">Proceso::Proceso</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> mem, <span class="keywordtype">int</span> time) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;<span class="keywordtype">id</span> = <a class="code" href="classProceso.html#aedb36cca995b8b23d2e3d3739d30b216">id</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;mem = <a class="code" href="classProceso.html#a2f0077c9db56775d552dc3941a81ec0b">mem</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this-&gt;time = <a class="code" href="classProceso.html#adf0f9027bbbb8f0c102a48376e5ef016">time</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">   17</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">Proceso::get_id</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classProceso.html#aedb36cca995b8b23d2e3d3739d30b216">id</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classProceso.html#a9232d18bcb134974f1c75af741b09035">   21</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classProceso.html#a9232d18bcb134974f1c75af741b09035">Proceso::get_mem</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classProceso.html#a2f0077c9db56775d552dc3941a81ec0b">mem</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classProceso.html#a6b2a6733de44fac7cec0f8c209c01640">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classProceso.html#a6b2a6733de44fac7cec0f8c209c01640">Proceso::get_time</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classProceso.html#adf0f9027bbbb8f0c102a48376e5ef016">time</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classProceso.html#a9cc227325f7cf9220b8372022d9fd827">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProceso.html#a9cc227325f7cf9220b8372022d9fd827">Proceso::set_time</a>(<span class="keywordtype">int</span> time) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;time = <a class="code" href="classProceso.html#adf0f9027bbbb8f0c102a48376e5ef016">time</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="aProceso_8hh_html"><div class="ttname"><a href="Proceso_8hh.html">Proceso.hh</a></div><div class="ttdoc">Especificación de la clase Proceso.</div></div>
+<div class="ttc" id="aclassProceso_html_a2f0077c9db56775d552dc3941a81ec0b"><div class="ttname"><a href="classProceso.html#a2f0077c9db56775d552dc3941a81ec0b">Proceso::mem</a></div><div class="ttdeci">int mem</div><div class="ttdoc">Memoria del proceso.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8hh_source.html#l00025">Proceso.hh:25</a></div></div>
+<div class="ttc" id="aclassProceso_html_a632f57d6ec48e76c80fbeb7734c1148c"><div class="ttname"><a href="classProceso.html#a632f57d6ec48e76c80fbeb7734c1148c">Proceso::Proceso</a></div><div class="ttdeci">Proceso()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00003">Proceso.cc:3</a></div></div>
+<div class="ttc" id="aclassProceso_html_a6b2a6733de44fac7cec0f8c209c01640"><div class="ttname"><a href="classProceso.html#a6b2a6733de44fac7cec0f8c209c01640">Proceso::get_time</a></div><div class="ttdeci">int get_time() const</div><div class="ttdoc">Consultora del tiempo.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00025">Proceso.cc:25</a></div></div>
+<div class="ttc" id="aclassProceso_html_a9232d18bcb134974f1c75af741b09035"><div class="ttname"><a href="classProceso.html#a9232d18bcb134974f1c75af741b09035">Proceso::get_mem</a></div><div class="ttdeci">int get_mem() const</div><div class="ttdoc">Consultora de la memoria.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00021">Proceso.cc:21</a></div></div>
+<div class="ttc" id="aclassProceso_html_a9cc227325f7cf9220b8372022d9fd827"><div class="ttname"><a href="classProceso.html#a9cc227325f7cf9220b8372022d9fd827">Proceso::set_time</a></div><div class="ttdeci">void set_time(int time)</div><div class="ttdoc">Modificadora del tiempo.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00031">Proceso.cc:31</a></div></div>
+<div class="ttc" id="aclassProceso_html_adf0f9027bbbb8f0c102a48376e5ef016"><div class="ttname"><a href="classProceso.html#adf0f9027bbbb8f0c102a48376e5ef016">Proceso::time</a></div><div class="ttdeci">int time</div><div class="ttdoc">Tiempo necesario para ejecutar el proceso.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8hh_source.html#l00027">Proceso.hh:27</a></div></div>
+<div class="ttc" id="aclassProceso_html_aedb36cca995b8b23d2e3d3739d30b216"><div class="ttname"><a href="classProceso.html#aedb36cca995b8b23d2e3d3739d30b216">Proceso::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Identificador del proceso.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8hh_source.html#l00023">Proceso.hh:23</a></div></div>
+<div class="ttc" id="aclassProceso_html_af2d7b179495f47a5f3b71bd34d1941c5"><div class="ttname"><a href="classProceso.html#af2d7b179495f47a5f3b71bd34d1941c5">Proceso::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Consultora del identificador.</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8cc_source.html#l00017">Proceso.cc:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

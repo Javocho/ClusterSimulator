@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Simulador de clúster de procesadores multiproceso: Fichero Fuente Area_espera.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Simulador de clúster de procesadores multiproceso
+   &#160;<span id="projectnumber">Versión primavera 2023</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Area_espera.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Area__espera_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef AREA_ESPERA_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define AREA_ESPERA_HH</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Proceso_8hh.html">Proceso.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM     </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Cluster_8hh.html">Cluster.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classArea__espera.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classArea__espera.html">Area_espera</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structArea__espera_1_1Prioridad__cont.html">   23</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structArea__espera_1_1Prioridad__cont.html">Prioridad_cont</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structArea__espera_1_1Prioridad__cont.html#a5b5c2492dad74a5d3b8e3d3368d267c0">   25</a></span>&#160;        queue&lt;Proceso&gt; <a class="code" href="structArea__espera_1_1Prioridad__cont.html#a5b5c2492dad74a5d3b8e3d3368d267c0">cola_procesos</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structArea__espera_1_1Prioridad__cont.html#a480cc7ee9a3bd6bacf15381540251b92">   27</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structArea__espera_1_1Prioridad__cont.html#a480cc7ee9a3bd6bacf15381540251b92">num_rechazados</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structArea__espera_1_1Prioridad__cont.html#aa3c38f0f932019a4ab1698357e8fd729">   29</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structArea__espera_1_1Prioridad__cont.html#aa3c38f0f932019a4ab1698357e8fd729">num_aceptados</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">   32</a></span>&#160;    map&lt;string,  Prioridad_cont&gt; <a class="code" href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">espera</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//Consultores</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> existe_proceso(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, map&lt;string, Prioridad_cont&gt;::iterator it) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//Constructoras</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span>    <a class="code" href="classArea__espera.html">Area_espera</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//Modificadores</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> alta_prioridad(<span class="keywordtype">string</span> prioridad);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> baja_prioridad(<span class="keywordtype">string</span> prioridad);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> alta_proceso_espera(<a class="code" href="classProceso.html">Proceso</a> proc, <span class="keywordtype">string</span> prioridad);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> enviar_procesos_cluster(<span class="keywordtype">int</span> n, <a class="code" href="classCluster.html">Cluster</a>&amp; c);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//escritura</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> imprimir_prioridad(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; prioridad) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> imprimir_area_espera() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aCluster_8hh_html"><div class="ttname"><a href="Cluster_8hh.html">Cluster.hh</a></div><div class="ttdoc">Especificación de la clase Cluster.</div></div>
+<div class="ttc" id="aProceso_8hh_html"><div class="ttname"><a href="Proceso_8hh.html">Proceso.hh</a></div><div class="ttdoc">Especificación de la clase Proceso.</div></div>
+<div class="ttc" id="aclassArea__espera_html"><div class="ttname"><a href="classArea__espera.html">Area_espera</a></div><div class="ttdoc">Representa un área de espera.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00020">Area_espera.hh:20</a></div></div>
+<div class="ttc" id="aclassArea__espera_html_a4a316f0af4c823f9873bd947e31dc86a"><div class="ttname"><a href="classArea__espera.html#a4a316f0af4c823f9873bd947e31dc86a">Area_espera::espera</a></div><div class="ttdeci">map&lt; string, Prioridad_cont &gt; espera</div><div class="ttdoc">Estructura dónde para cada prioridad hay su respectiva lista de procesos.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00032">Area_espera.hh:32</a></div></div>
+<div class="ttc" id="aclassCluster_html"><div class="ttname"><a href="classCluster.html">Cluster</a></div><div class="ttdoc">Representa un clúster de procesadores.</div><div class="ttdef"><b>Definition:</b> <a href="Cluster_8hh_source.html#l00018">Cluster.hh:18</a></div></div>
+<div class="ttc" id="aclassProceso_html"><div class="ttname"><a href="classProceso.html">Proceso</a></div><div class="ttdoc">Representa un proceso</div><div class="ttdef"><b>Definition:</b> <a href="Proceso_8hh_source.html#l00020">Proceso.hh:20</a></div></div>
+<div class="ttc" id="astructArea__espera_1_1Prioridad__cont_html"><div class="ttname"><a href="structArea__espera_1_1Prioridad__cont.html">Area_espera::Prioridad_cont</a></div><div class="ttdoc">Estructura de datos que se encuentra en cada prioridad y que contiene la cola de procesos,...</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00023">Area_espera.hh:23</a></div></div>
+<div class="ttc" id="astructArea__espera_1_1Prioridad__cont_html_a480cc7ee9a3bd6bacf15381540251b92"><div class="ttname"><a href="structArea__espera_1_1Prioridad__cont.html#a480cc7ee9a3bd6bacf15381540251b92">Area_espera::Prioridad_cont::num_rechazados</a></div><div class="ttdeci">int num_rechazados</div><div class="ttdoc">Número de procesos rechazados al enviarlos al clúster de la prioridad.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00027">Area_espera.hh:27</a></div></div>
+<div class="ttc" id="astructArea__espera_1_1Prioridad__cont_html_a5b5c2492dad74a5d3b8e3d3368d267c0"><div class="ttname"><a href="structArea__espera_1_1Prioridad__cont.html#a5b5c2492dad74a5d3b8e3d3368d267c0">Area_espera::Prioridad_cont::cola_procesos</a></div><div class="ttdeci">queue&lt; Proceso &gt; cola_procesos</div><div class="ttdoc">Cola de procesos ordenados por orden de inserción.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00025">Area_espera.hh:25</a></div></div>
+<div class="ttc" id="astructArea__espera_1_1Prioridad__cont_html_aa3c38f0f932019a4ab1698357e8fd729"><div class="ttname"><a href="structArea__espera_1_1Prioridad__cont.html#aa3c38f0f932019a4ab1698357e8fd729">Area_espera::Prioridad_cont::num_aceptados</a></div><div class="ttdeci">int num_aceptados</div><div class="ttdoc">Número de procesos enviados satisfactoriamente al clúster de la prioridad.</div><div class="ttdef"><b>Definition:</b> <a href="Area__espera_8hh_source.html#l00029">Area_espera.hh:29</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

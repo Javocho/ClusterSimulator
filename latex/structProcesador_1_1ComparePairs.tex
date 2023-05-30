@@ -1,0 +1,47 @@
+\hypertarget{structProcesador_1_1ComparePairs}{}\doxysection{Referencia de la Estructura Procesador\+::Compare\+Pairs}
+\label{structProcesador_1_1ComparePairs}\index{Procesador::ComparePairs@{Procesador::ComparePairs}}
+
+
+Algoritmo de ordenación para explicitar cómo se ordena la estructura de los huecos.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structProcesador_1_1ComparePairs_a4d6290cec6865e2a6e97a14026c5028c}{operator()}} (const pair$<$ int, int $>$ \&p1, const pair$<$ int, int $>$ \&p2) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Algoritmo de ordenación para explicitar cómo se ordena la estructura de los huecos. 
+
+Definición en la línea 26 del archivo Procesador.\+hh.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{structProcesador_1_1ComparePairs_a4d6290cec6865e2a6e97a14026c5028c}\label{structProcesador_1_1ComparePairs_a4d6290cec6865e2a6e97a14026c5028c}} 
+\index{Procesador::ComparePairs@{Procesador::ComparePairs}!operator()@{operator()}}
+\index{operator()@{operator()}!Procesador::ComparePairs@{Procesador::ComparePairs}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Procesador\+::\+Compare\+Pairs\+::operator() (\begin{DoxyParamCaption}\item[{const pair$<$ int, int $>$ \&}]{p1,  }\item[{const pair$<$ int, int $>$ \&}]{p2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea 27 del archivo Procesador.\+hh.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                                                                       \{}
+\DoxyCodeLine{28                 \textcolor{keywordflow}{if} (p1.first == p2.first) \{}
+\DoxyCodeLine{29                     \textcolor{keywordflow}{return} p1.second < p2.second;}
+\DoxyCodeLine{30                 \}}
+\DoxyCodeLine{31                 \textcolor{keywordflow}{return} p1.first < p2.first;}
+\DoxyCodeLine{32             \}}
+
+\end{DoxyCode}
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Procesador_8hh}{Procesador.\+hh}}\end{DoxyCompactItemize}

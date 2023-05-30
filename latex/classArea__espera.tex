@@ -1,0 +1,391 @@
+\hypertarget{classArea__espera}{}\doxysection{Referencia de la Clase Area\+\_\+espera}
+\label{classArea__espera}\index{Area\_espera@{Area\_espera}}
+
+
+Representa un área de espera.  
+
+
+
+
+{\ttfamily \#include $<$Area\+\_\+espera.\+hh$>$}
+
+\doxysubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structArea__espera_1_1Prioridad__cont}{Prioridad\+\_\+cont}}
+\begin{DoxyCompactList}\small\item\em Estructura de datos que se encuentra en cada prioridad y que contiene la cola de procesos, el número de aceptados y el número de rechazados de la prioridad hasta el momento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArea__espera_a03fae0938ad34fe4e0ea6e0d0b0852b8}{Area\+\_\+espera}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea__espera_aa14670db4ca5a1fcfd5ef71e4e6950f0}{alta\+\_\+prioridad}} (string prioridad)
+\begin{DoxyCompactList}\small\item\em Crea una prioridad vacía en el área de espera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea__espera_a7401296748ebe4074beb1720783ab85d}{baja\+\_\+prioridad}} (string prioridad)
+\begin{DoxyCompactList}\small\item\em Elimina una prioridad del área de espera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea__espera_a320c099eb902755dd2cff657a5592a5d}{alta\+\_\+proceso\+\_\+espera}} (\mbox{\hyperlink{classProceso}{Proceso}} proc, string prioridad)
+\begin{DoxyCompactList}\small\item\em Añade un proceso a la cola de espera de una prioridad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea__espera_abe39b416f75bcd2d4eb0e1e3e17732d5}{enviar\+\_\+procesos\+\_\+cluster}} (int n, \mbox{\hyperlink{classCluster}{Cluster}} \&c)
+\begin{DoxyCompactList}\small\item\em Envía procesos de la sala de espera al clúster hasta que n procesos hayan sido colocados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea__espera_a100ce44b11c72f77d145da98ebb7d664}{imprimir\+\_\+prioridad}} (const string \&prioridad) const
+\begin{DoxyCompactList}\small\item\em Imprime los procesos pendientes de la prioridad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArea__espera_a030a4d4d0bcdceddcfdb15403a92c865}{imprimir\+\_\+area\+\_\+espera}} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classArea__espera_a0e523c8dcffa6a791621317184bf7e7d}{existe\+\_\+proceso}} (int id, map$<$ string, \mbox{\hyperlink{structArea__espera_1_1Prioridad__cont}{Prioridad\+\_\+cont}} $>$\+::iterator it) const
+\begin{DoxyCompactList}\small\item\em Consulta si existe un proceso de nombre id en la cola de procesos de la prioridad apuntada por it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{structArea__espera_1_1Prioridad__cont}{Prioridad\+\_\+cont}} $>$ \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}
+\begin{DoxyCompactList}\small\item\em Estructura dónde para cada prioridad hay su respectiva lista de procesos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un área de espera. 
+
+Un área de espera tiene un mapa de prioridades y contenidos \mbox{\hyperlink{structArea__espera_1_1Prioridad__cont}{Prioridad\+\_\+cont}} dónde hay una cola de procesos, el número de rechazados y el número de aceptados de cada prioridad. 
+
+Definición en la línea 20 del archivo Area\+\_\+espera.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classArea__espera_a03fae0938ad34fe4e0ea6e0d0b0852b8}\label{classArea__espera_a03fae0938ad34fe4e0ea6e0d0b0852b8}} 
+\index{Area\_espera@{Area\_espera}!Area\_espera@{Area\_espera}}
+\index{Area\_espera@{Area\_espera}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{Area\_espera()}{Area\_espera()}}
+{\footnotesize\ttfamily Area\+\_\+espera\+::\+Area\+\_\+espera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un área de espera \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un área de espera vacía 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 5 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                          \{}
+\DoxyCodeLine{6     map<string,  Prioridad\_cont>::iterator it = \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.begin();}
+\DoxyCodeLine{7     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) \{}
+\DoxyCodeLine{8         it-\/>second.num\_rechazados = 0;}
+\DoxyCodeLine{9         it-\/>second.num\_aceptados = 0;}
+\DoxyCodeLine{10         ++it;}
+\DoxyCodeLine{11     \}}
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classArea__espera_aa14670db4ca5a1fcfd5ef71e4e6950f0}\label{classArea__espera_aa14670db4ca5a1fcfd5ef71e4e6950f0}} 
+\index{Area\_espera@{Area\_espera}!alta\_prioridad@{alta\_prioridad}}
+\index{alta\_prioridad@{alta\_prioridad}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{alta\_prioridad()}{alta\_prioridad()}}
+{\footnotesize\ttfamily void Area\+\_\+espera\+::alta\+\_\+prioridad (\begin{DoxyParamCaption}\item[{string}]{prioridad }\end{DoxyParamCaption})}
+
+
+
+Crea una prioridad vacía en el área de espera. 
+
+Si identificador existe, se imprime mensaje de error. \begin{DoxyPrecond}{Precondición}
+\+: {\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: prioridad añadida al área de espera. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+log(n) siendo n el número de prioridades 
+\end{DoxyParagraph}
+
+
+Definición en la línea 25 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                                  \{}
+\DoxyCodeLine{26     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.find(prioridad) != \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) cout << \textcolor{stringliteral}{"{}error: ya existe prioridad"{}} << endl;}
+\DoxyCodeLine{27     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{28         Prioridad\_cont aux;}
+\DoxyCodeLine{29         aux.num\_aceptados = 0;}
+\DoxyCodeLine{30         aux.num\_rechazados = 0;}
+\DoxyCodeLine{31         \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.insert(make\_pair(prioridad, aux));}
+\DoxyCodeLine{32     \}}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classArea__espera_a320c099eb902755dd2cff657a5592a5d}\label{classArea__espera_a320c099eb902755dd2cff657a5592a5d}} 
+\index{Area\_espera@{Area\_espera}!alta\_proceso\_espera@{alta\_proceso\_espera}}
+\index{alta\_proceso\_espera@{alta\_proceso\_espera}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{alta\_proceso\_espera()}{alta\_proceso\_espera()}}
+{\footnotesize\ttfamily void Area\+\_\+espera\+::alta\+\_\+proceso\+\_\+espera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProceso}{Proceso}}}]{proc,  }\item[{string}]{prioridad }\end{DoxyParamCaption})}
+
+
+
+Añade un proceso a la cola de espera de una prioridad. 
+
+Si identificador no existe o tiene procesos pendientes, se imprime mensaje de error. \begin{DoxyPrecond}{Precondición}
+\+: {\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: proceso añadido a la cola de espera de la prioridad. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+log(n) siendo n el número de prioridades, logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 42 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                                     \{}
+\DoxyCodeLine{43     \textcolor{keyword}{const} map<string, Prioridad\_cont>::iterator\& it = \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.find(prioridad);}
+\DoxyCodeLine{44     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) cout << \textcolor{stringliteral}{"{}error: no existe prioridad"{}} << endl;}
+\DoxyCodeLine{45     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classArea__espera_a0e523c8dcffa6a791621317184bf7e7d}{existe\_proceso}}(proc.\mbox{\hyperlink{classProceso_af2d7b179495f47a5f3b71bd34d1941c5}{get\_id}}(), it)) cout << \textcolor{stringliteral}{"{}error: ya existe proceso"{}} << endl;}
+\DoxyCodeLine{46     \textcolor{keywordflow}{else} it-\/>second.cola\_procesos.push(proc);}
+\DoxyCodeLine{47 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classArea__espera_a7401296748ebe4074beb1720783ab85d}\label{classArea__espera_a7401296748ebe4074beb1720783ab85d}} 
+\index{Area\_espera@{Area\_espera}!baja\_prioridad@{baja\_prioridad}}
+\index{baja\_prioridad@{baja\_prioridad}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{baja\_prioridad()}{baja\_prioridad()}}
+{\footnotesize\ttfamily void Area\+\_\+espera\+::baja\+\_\+prioridad (\begin{DoxyParamCaption}\item[{string}]{prioridad }\end{DoxyParamCaption})}
+
+
+
+Elimina una prioridad del área de espera. 
+
+Si identificador no existe o tiene procesos pendientes, se imprime mensaje de error. \begin{DoxyPrecond}{Precondición}
+\+: {\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: prioridad eliminada del área de espera. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+log(n) siendo n el número de prioridades, logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 35 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                                  \{}
+\DoxyCodeLine{36     map<string, Prioridad\_cont >::iterator it = \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.find(prioridad);}
+\DoxyCodeLine{37     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) cout << \textcolor{stringliteral}{"{}error: no existe prioridad"{}} << endl;}
+\DoxyCodeLine{38     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not it-\/>second.cola\_procesos.empty()) cout << \textcolor{stringliteral}{"{}error: prioridad con procesos"{}} << endl;}
+\DoxyCodeLine{39     \textcolor{keywordflow}{else} \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.erase(it);}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classArea__espera_abe39b416f75bcd2d4eb0e1e3e17732d5}\label{classArea__espera_abe39b416f75bcd2d4eb0e1e3e17732d5}} 
+\index{Area\_espera@{Area\_espera}!enviar\_procesos\_cluster@{enviar\_procesos\_cluster}}
+\index{enviar\_procesos\_cluster@{enviar\_procesos\_cluster}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{enviar\_procesos\_cluster()}{enviar\_procesos\_cluster()}}
+{\footnotesize\ttfamily void Area\+\_\+espera\+::enviar\+\_\+procesos\+\_\+cluster (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{classCluster}{Cluster}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Envía procesos de la sala de espera al clúster hasta que n procesos hayan sido colocados. 
+
+Se intentan enviar los procesos al clúster por orden de prioridad y dentro de éste por antiguedad. La función finaliza cuando se han colocado, no quedan procesos pendientes o han sido rechazados. Si se rechaza vuelve al área de espera como el más reciente. \begin{DoxyPrecond}{Precondición}
+n $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+n procesos se han colocado en el clúster 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+n $\ast$ log(n) siendo n el número de prioridades, logarítmico $\ast$ constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 49 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                                            \{}
+\DoxyCodeLine{50     \textcolor{comment}{//que pasa si hueco que le va mejor ese procesador ya tiene proceso con nombre}}
+\DoxyCodeLine{51     map<string, Prioridad\_cont>::iterator it = \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.begin();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} n\_colocados = 0;}
+\DoxyCodeLine{53     queue<Proceso> aux;}
+\DoxyCodeLine{54     \textcolor{keywordflow}{while} (n\_colocados < n and it != \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) \{}
+\DoxyCodeLine{55         \textcolor{keywordflow}{if} (it-\/>second.cola\_procesos.empty()) \{ \textcolor{comment}{//si no quedan procesos en la prioridad y ha habido procesos rechazados se vuelven a insertar en la cola }}
+\DoxyCodeLine{56             it-\/>second.cola\_procesos = aux;}
+\DoxyCodeLine{57             ++it;}
+\DoxyCodeLine{58             \textcolor{keywordflow}{while} (not aux.empty()) aux.pop();}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{61             \textcolor{keywordtype}{bool} colocado;}
+\DoxyCodeLine{62             c.\mbox{\hyperlink{classCluster_a122e01e92292e7fc7ed6dedf03d9f89c}{proceso\_enviado}}(it-\/>second.cola\_procesos.front(), colocado);}
+\DoxyCodeLine{63             \textcolor{keywordflow}{if} (colocado) \{}
+\DoxyCodeLine{64                 it-\/>second.cola\_procesos.pop();}
+\DoxyCodeLine{65                 ++n\_colocados;}
+\DoxyCodeLine{66                 it-\/>second.num\_aceptados++;}
+\DoxyCodeLine{67             \}}
+\DoxyCodeLine{68             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{69                 \mbox{\hyperlink{classProceso}{Proceso}} proc = it-\/>second.cola\_procesos.front();}
+\DoxyCodeLine{70                 it-\/>second.cola\_procesos.pop();}
+\DoxyCodeLine{71                 aux.push(proc);}
+\DoxyCodeLine{72                 it-\/>second.num\_rechazados++;}
+\DoxyCodeLine{73             \}}
+\DoxyCodeLine{74         \}}
+\DoxyCodeLine{75     \}}
+\DoxyCodeLine{76     \textcolor{keywordflow}{if} (not aux.empty()) \{ \textcolor{comment}{//si no quedan procesos en la prioridad, no quedan prioridades y ha habido procesos rechazados se vuelven a insertar en la cola }}
+\DoxyCodeLine{77         \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) -\/-\/it;}
+\DoxyCodeLine{78         it-\/>second.cola\_procesos = aux;}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classArea__espera_a0e523c8dcffa6a791621317184bf7e7d}\label{classArea__espera_a0e523c8dcffa6a791621317184bf7e7d}} 
+\index{Area\_espera@{Area\_espera}!existe\_proceso@{existe\_proceso}}
+\index{existe\_proceso@{existe\_proceso}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{existe\_proceso()}{existe\_proceso()}}
+{\footnotesize\ttfamily bool Area\+\_\+espera\+::existe\+\_\+proceso (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{map$<$ string, \mbox{\hyperlink{structArea__espera_1_1Prioridad__cont}{Prioridad\+\_\+cont}} $>$\+::iterator}]{it }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consulta si existe un proceso de nombre id en la cola de procesos de la prioridad apuntada por it. 
+
+\begin{DoxyPrecond}{Precondición}
+\+: {\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: Si existe se devuelve true. Sino false 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 14 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                                                                                      \{}
+\DoxyCodeLine{15     \textcolor{keywordtype}{bool} existe = \textcolor{keyword}{false};}
+\DoxyCodeLine{16     queue<Proceso> aux = it-\/>second.cola\_procesos;}
+\DoxyCodeLine{17     \textcolor{keywordflow}{while} (not aux.empty() and not existe) \{}
+\DoxyCodeLine{18         \mbox{\hyperlink{classProceso}{Proceso}} proc = aux.front();}
+\DoxyCodeLine{19         \textcolor{keywordflow}{if} (proc.\mbox{\hyperlink{classProceso_af2d7b179495f47a5f3b71bd34d1941c5}{get\_id}}() == \textcolor{keywordtype}{id}) existe = \textcolor{keyword}{true};}
+\DoxyCodeLine{20         aux.pop();}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     \textcolor{keywordflow}{return} existe;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classArea__espera_a030a4d4d0bcdceddcfdb15403a92c865}\label{classArea__espera_a030a4d4d0bcdceddcfdb15403a92c865}} 
+\index{Area\_espera@{Area\_espera}!imprimir\_area\_espera@{imprimir\_area\_espera}}
+\index{imprimir\_area\_espera@{imprimir\_area\_espera}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{imprimir\_area\_espera()}{imprimir\_area\_espera()}}
+{\footnotesize\ttfamily void Area\+\_\+espera\+::imprimir\+\_\+area\+\_\+espera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+Se imprimen los procesos pendientes de todas las prioridades por orden creciente de prioridad. Para cada prioridad se imprime el número de procesos de la prioridad colocados en el clúster y el número de rechazados. \begin{DoxyPrecond}{Precondición}
+\+: {\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: Se han impreso los procesos de todas las prioridades pendientes, el número de colocados y rechazados. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+n $\ast$ log(n) siendo n el número de prioridades, logarítmico $\ast$ constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 100 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                              \{}
+\DoxyCodeLine{101     map<string, Prioridad\_cont>::const\_iterator it = \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.begin();}
+\DoxyCodeLine{102     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) \{}
+\DoxyCodeLine{103         cout << it-\/>first << endl;}
+\DoxyCodeLine{104         \mbox{\hyperlink{classArea__espera_a100ce44b11c72f77d145da98ebb7d664}{imprimir\_prioridad}}(it-\/>first);}
+\DoxyCodeLine{105         ++it;}
+\DoxyCodeLine{106     \}}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classArea__espera_a100ce44b11c72f77d145da98ebb7d664}\label{classArea__espera_a100ce44b11c72f77d145da98ebb7d664}} 
+\index{Area\_espera@{Area\_espera}!imprimir\_prioridad@{imprimir\_prioridad}}
+\index{imprimir\_prioridad@{imprimir\_prioridad}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{imprimir\_prioridad()}{imprimir\_prioridad()}}
+{\footnotesize\ttfamily void Area\+\_\+espera\+::imprimir\+\_\+prioridad (\begin{DoxyParamCaption}\item[{const string \&}]{prioridad }\end{DoxyParamCaption}) const}
+
+
+
+Imprime los procesos pendientes de la prioridad. 
+
+Se imprimen en orden decreciente de antiguedad desde su última alta. También escribe el número de procesos de la prioridad colocados en el clúster y el número de rechazos. Si no existe prioridad, se imprime mensaje de error. \begin{DoxyPrecond}{Precondición}
+\+: {\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+\+: Se han impreso procesos de la prioridad pendientes, colocados y rechazados. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+log(n) siendo n el número de prioridades para hacer la búsqueda, logarítmico 
+\end{DoxyParagraph}
+
+
+Definición en la línea 84 del archivo Area\+\_\+espera.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                                                   \{}
+\DoxyCodeLine{85     map<string, Prioridad\_cont>::const\_iterator it = \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.find(prioridad);}
+\DoxyCodeLine{86     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}{espera}}.end()) \{}
+\DoxyCodeLine{87         cout << \textcolor{stringliteral}{"{}error: no existe prioridad"{}} << endl;}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{90         queue<Proceso> aux = it-\/>second.cola\_procesos;}
+\DoxyCodeLine{91         \textcolor{keywordflow}{while} (not aux.empty()) \{}
+\DoxyCodeLine{92             \mbox{\hyperlink{classProceso}{Proceso}} proc = aux.front();}
+\DoxyCodeLine{93             cout << proc.\mbox{\hyperlink{classProceso_af2d7b179495f47a5f3b71bd34d1941c5}{get\_id}}() << \textcolor{charliteral}{' '} << proc.\mbox{\hyperlink{classProceso_a9232d18bcb134974f1c75af741b09035}{get\_mem}}() << \textcolor{charliteral}{' '} << proc.\mbox{\hyperlink{classProceso_a6b2a6733de44fac7cec0f8c209c01640}{get\_time}}() << endl;}
+\DoxyCodeLine{94             aux.pop();}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96         cout << it-\/>second.num\_aceptados << \textcolor{charliteral}{' '} << it-\/>second.num\_rechazados << endl;}
+\DoxyCodeLine{97     \}                                                                                                                           }
+\DoxyCodeLine{98 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}\label{classArea__espera_a4a316f0af4c823f9873bd947e31dc86a}} 
+\index{Area\_espera@{Area\_espera}!espera@{espera}}
+\index{espera@{espera}!Area\_espera@{Area\_espera}}
+\doxysubsubsection{\texorpdfstring{espera}{espera}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{structArea__espera_1_1Prioridad__cont}{Prioridad\+\_\+cont}}$>$ Area\+\_\+espera\+::espera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estructura dónde para cada prioridad hay su respectiva lista de procesos. 
+
+
+
+Definición en la línea 32 del archivo Area\+\_\+espera.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Area__espera_8hh}{Area\+\_\+espera.\+hh}}\item 
+\mbox{\hyperlink{Area__espera_8cc}{Area\+\_\+espera.\+cc}}\end{DoxyCompactItemize}
